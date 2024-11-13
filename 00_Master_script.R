@@ -43,22 +43,11 @@ pacman::p_load(summarytools, openxlsx, expss, psych, gtsummary, readxl, lubridat
 
 ## 1.2. Configurar usuarios ------------------------------------------------------
 
-if (Sys.info()[["user"]] == "Administrador")  {setwd("C:/Users/Administrador/Documents")}
+if (Sys.info()[["user"]] == "Administrador")  {setwd("C:/Users/Administrador/Documents/")}
 
 ## 1.3. Configurar carpetas ------------------------------------------------------
 
-## 1.3.1. Definir la ruta de la carpeta principal
-proyecto    <- paste(getwd(),  "Economia_aplicada", sep = "/")
-
-## 1.3.2. Crear la carpeta principal si no existe
-if (!file.exists(proyecto)) {
-  dir.create(proyecto)
-  message("La carpeta 'Economia_aplicada' ha sido creada.")
-} else {
-  message("La carpeta 'Economia_aplicada' ya existe.")
-}
-
-## 1.3.3. Creación de subcarpetas
+proyecto    <- paste(getwd(), "Economia_aplicada", sep = "/")
 raw_data    <- paste(proyecto, "00_Raw_data"      , sep = "/")
 clean_data  <- paste(proyecto, "01_Clean_data"    , sep = "/")
 input       <- paste(proyecto, "02_Input"         , sep = "/")

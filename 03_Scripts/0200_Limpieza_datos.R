@@ -15,6 +15,7 @@ cat("\014")
     1.2. Cultivos cosechados en la unidad agropecuaria
     1.3. Costos de la producción de la actividad agropecuaria
     1.4. Caracteristicas del productor/a agropecuario/a y su familia
+    1.5. Servicios financieros
   2. Info obras
     
 '}
@@ -42,3 +43,10 @@ source(paste0(scripts, "/","0205_Servicios_financieros.R"))
 # PART 2: Info obras -------------------------------------------------------------
 # ********************************************************************************
 
+source(paste0(scripts, "/","0206_Infobras.R"))
+
+# ********************************************************************************
+# PART 3: Unión de base de datos -------------------------------------------------
+# ********************************************************************************
+
+# source(paste0(scripts, "/", "0207_Union_base_datos.R"))

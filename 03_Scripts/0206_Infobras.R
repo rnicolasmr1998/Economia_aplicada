@@ -93,7 +93,7 @@ dataset <- dataset[TIPO_OBRA_CLASIFICADOR_2 %in% c("Riego", "Agrario")]
 
 ## 1.5.3. Fecha de inicio de obras -----------------------------------------------
 dataset <- dataset[FECHA_INICIO_OBRA >= as.Date("2015-01-01") & 
-                     FECHA_INICIO_OBRA < as.Date("2019-01-01")][order(FECHA_INICIO_OBRA)]
+                     FECHA_INICIO_OBRA < as.Date("2019-12-31")][order(FECHA_INICIO_OBRA)]
 
 ## 1.6. Crear columnas -----------------------------------------------------------
 
