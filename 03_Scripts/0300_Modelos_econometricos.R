@@ -68,4 +68,8 @@ modelo1 <- svyglm(
 stargazer(modelo1, modelo2, type = "text", title = "Resumen del Modelo", 
           align = TRUE, digits = 3)
 
-
+capture.output(
+  stargazer(modelo1, modelo2, type = "text", title = "Resumen del Modelo", 
+            align = TRUE, digits = 3),
+  file = paste(output, "resumen_modelos.txt", sep = "/")  # Nombre del archivo de salida
+)
